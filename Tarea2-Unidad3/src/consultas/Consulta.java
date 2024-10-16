@@ -1,6 +1,8 @@
 package consultas;
 
 import consultorios.Consultorio;
+import java.time.LocalDateTime;
+import java.util.Random;
 import usuarios.medicos.Medico;
 import usuarios.pacientes.Paciente;
 
@@ -18,7 +20,7 @@ public class Consulta {
 
 //    constructor
     public Consulta(LocalDateTime fechaHora, Paciente paciente, Medico medico, Consultorio consultorio) {
-        this.id = this.random.nextInt(1,10001);
+        this.id = this.random.nextInt(10001)+1;
         this.fechaHora = fechaHora;
         this.paciente = paciente;
         this.medico = medico;

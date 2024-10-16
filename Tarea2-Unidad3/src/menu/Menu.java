@@ -20,15 +20,15 @@ public class Menu {
     public void login(){
 
         Administrador administrador = new Administrador(
-            "001",
-            "admin",
-            "1",
-            LocalDate.of(2004,9,17),
-            "443 333 182", 
-            "***",
-            15000,
-            "refadmin123",
-            10
+                "001",
+                "Admin",
+                "Supremo",
+                LocalDate.of(2004,9,17),
+                "4452234568",
+                "12354",
+                10000,
+                "refad678",
+                2
             );
             hospital.registrarAdministrador(administrador);
 
@@ -41,7 +41,7 @@ public class Menu {
             System.out.println("Ingresa el  usuario: ");
             String usuario = scanner.nextLine();
 
-            System.out.println("Ingresa la contrasenia: ");
+            System.out.println("Ingresa la contraseña: ");
             String contrasenia = scanner.nextLine();
 
             Usuario usuarioEnSesion = hospital.validarInicioSesion(usuario,contrasenia); // Usuario || null
@@ -77,7 +77,7 @@ public class Menu {
         while(opcion !=2) {
             System.out.println("\n****BIENVENIDO****");
             System.out.println("1. Ver consultas");
-            System.out.println("2. Salir");
+            System.out.println("2. Salir de la sesión");
 
             System.out.println("Selecciona una opcion: ");
             opcion = scanner.nextInt();
@@ -88,7 +88,7 @@ public class Menu {
                     hospital.mostrarConsultasPorPaciente(id);
                     break;
                 case 2:
-                    System.out.println("Saliendo del sistema");
+                    System.out.println("Cerrando sesión");
                     scanner.nextLine();
                     break;
                 default:
@@ -108,7 +108,7 @@ public class Menu {
             System.out.println("1. Ver consultas");
             System.out.println("2. Ver mis usuarios.pacientes");
             System.out.println("3. Consultar Paciente");
-            System.out.println("4. Salir");
+            System.out.println("4. Salir de la sesión");
 
             System.out.println("Selecciona una opcion: ");
             opcion2 = scanner.nextInt();
@@ -123,7 +123,7 @@ public class Menu {
                     System.out.println(hospital.obtenerNombresPacientesPorMedico(id));
                     break;
                 case 3:
-                    System.out.println("Saliendo del sistema");
+                    System.out.println("Cerrando sesión");
                     break;
                 default:
                     System.out.println("Numero no esta dentro de las opciones");
@@ -152,7 +152,7 @@ public class Menu {
             System.out.println("11. Buscar consultorios por Id");
             System.out.println("12. Registrar administrador");
             System.out.println("13. Mostrar administradores");
-            System.out.println("14. Salir");
+            System.out.println("14. Salir de la sesión");
             System.out.print("\nSelecciona una opcion: ");
             opcion = scanner.nextInt();
             switch (opcion) {
@@ -385,7 +385,7 @@ public class Menu {
                     break;
                 case 10:
 //                    mostrar usuarios.medicos por el id
-                    System.out.println("\nAccediste a la opcion de mostrar usuarios.medicos por su Id");
+                    System.out.println("\nAccediste a la opcion de mostrar usuarios medicos por su Id");
                     System.out.print("Ingresa el Id del medico: ");
                     scanner.nextLine();
                     String idMedicoBuscar = scanner.nextLine();
@@ -455,7 +455,7 @@ public class Menu {
                     System.out.println("Ingresa tu sueldo quincenal: ");
                     double sueldo = scanner.nextDouble();
 
-                    System.out.println("Ingresa los anios que llevas laborando: ");
+                    System.out.println("Ingresa los años que llevas laborando: ");
                     int antiguedad = scanner.nextInt();
 
                     String idAdmin = hospital.generarIdAdmin(apellidosAdmin,String.valueOf(fechaNacimientoAdmin));
@@ -469,10 +469,11 @@ public class Menu {
                     hospital.mostrarAdministradores();
                     break;
                 case 14:
-                    System.out.println("\n♛♛    Saliendo del sistema    ♛♛\n");
+                    System.out.println("\n||Cerrando sesión||\n");
+                    scanner.nextLine();
                     break;
                 default:
-                    System.out.println("\n☩ : ☩   Numero no esta dentro de las opciones   ☩ : ☩\n");
+                    System.out.println("\n**Numero no esta dentro de las opciones**\n");
             }
         }
     }
