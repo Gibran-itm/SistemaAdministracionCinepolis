@@ -22,5 +22,16 @@ public class Customers extends Users {
     public int getTotalFunciones() {
         return totalFunciones;
 }
+    public String mostrarDatos(){
+        return String.format("Id: %s, nombre: %s, apellido: %s, fecha de nacimiento: %s, direccion: %s, CURP: %s, total de funciones: %d",
+                getId(),
+                getNombre(),
+                getApellido(),
+                getFechaNacimiento(),
+                getDireccion(),
+                getCurp(),
+                getTotalFunciones()
+        );
+    }
 
 }

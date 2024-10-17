@@ -19,15 +19,34 @@ public class trabajadores extends Users {
         this.añosTrabajando= añosTrabajando;
     }
 
+    public double getSueldo() {
+        return sueldo;
+    }
+
     public String getRfc() {
+
         return rfc;
     }
     public String getTelefono() {
+
         return telefono;
     }
     public int getAñosTrabajando() {
         return añosTrabajando;
 }
 
+public String mostrarDatos(){
+        return String.format("Id: %s, nombre: %s, apellido: %s, fecha de nacimiento: %s, direccion: %s, rfc: %s, sueldo: %.2f, telefono: %s, años trabajando: %d",
+                getId(),
+                getNombre(),
+                getApellido(),
+                getFechaNacimiento(),
+                getDireccion(),
+                getRfc(),
+                getSueldo(),
+                getTelefono(),
+                getAñosTrabajando()
+                );
+}
 
 }

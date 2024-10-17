@@ -24,25 +24,31 @@ public class Users {
         this.rol = rol;
     }
     public String getId() {
+
         return id;
     }
     public String getNombre() {
         return nombre;
     }
     public String getApellido() {
+
         return apellido;
     }
     public LocalDate getFechaNacimiento() {
+
         return fechaNacimiento;
     }
     public String getDireccion() {
+
         return direccion;
     }
     public Rol getRol() {
+
         return rol;
     }
 
     public String getContraseña() {
+
         return contraseña;
     }
 }
