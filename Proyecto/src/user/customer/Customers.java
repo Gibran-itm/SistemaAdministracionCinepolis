@@ -16,13 +16,16 @@ public class Customers extends Users {
         this.totalFunciones = totalFunciones;
 
     }
+
     public String getCurp() {
         return CURP;
     }
+
     public int getTotalFunciones() {
         return totalFunciones;
-}
-    public String mostrarDatos(){
+    }
+
+    public String mostrarDatos() {
         return String.format("Id: %s, nombre: %s, apellido: %s, fecha de nacimiento: %s, direccion: %s, CURP: %s, total de funciones: %d",
                 getId(),
                 getNombre(),

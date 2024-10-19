@@ -1,4 +1,4 @@
-package productos;
+package productos.tipo;
 
 public enum tipoProducto {
 BEBIDA,

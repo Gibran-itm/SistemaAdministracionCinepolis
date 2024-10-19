@@ -18,15 +18,19 @@ public class Tickets {
         this.horaFuncion = horaFuncion;
     }
     public String getID() {
+
         return ID;
     }
     public Double getPrecio() {
+
         return precio;
     }
     public Seats getSeats() {
+
         return seats;
     }
     public LocalTime getHoraFuncion() {
+
         return horaFuncion;
     }
 

@@ -28,40 +28,6 @@ public class MovieTheaters {
         this.listaAdmin.add(administrators);
         this.listaUser.add(administrators);
     }
-    public void Productos(){
-        ProductoCine palomitasJumbo = new ProductoCine("Palomitas Jumbo", 85, "Palomitas");
-        ProductoCine palomitasGrandes = new ProductoCine("Palomitas Grandes", 80, "Palomitas");
-        ProductoCine palomitasMedianas = new ProductoCine("Palomitas Medianas", 75, "Palomitas");
-        ProductoCine palomitasChicas = new ProductoCine("Palomitas Chicas", 70, "Palomitas");
-        ProductoCine refrescoCocaCola = new ProductoCine("Coca Cola", 42, "Bebida");
-        ProductoCine refrescoSquirt = new ProductoCine("Squirt", 42, "Bebida");
-        ProductoCine refrescoFanta = new ProductoCine("Fanta", 42, "Bebida");
-        ProductoCine panditas = new ProductoCine("Panditas", 30, "Panditas" ); 
-        ProductoCine agua = new ProductoCine("Agua Natural", 15, "Bebida" );
-        ProductoCine snickers = new ProductoCine("Snickers", 35, "Chocolate");
-        ProductoCine milkyWays = new ProductoCine("MilkyWays", 35, "Chocolate");
-        ProductoCine magnum = new ProductoCine("Magnum", 50, "Chocolate");
-        ProductoCine corneto = new ProductoCine("Corneto", 40, "Chocolate");
-    
-    
-        palomitasJumbo.mostrarInfo();
-        palomitasGrandes.mostrarInfo();
-        palomitasMedianas.mostrarInfo();
-        palomitasChicas.mostrarInfo();
-    
-        refrescoCocaCola.mostrarInfo();
-        refrescoSquirt.mostrarInfo();
-        refrescoFanta.mostrarInfo();
-    
-        panditas.mostrarInfo();
-    
-        agua.mostrarInfo();
-    
-        snickers.mostrarInfo();
-        milkyWays.mostrarInfo();
-        magnum.mostrarInfo();
-        corneto.mostrarInfo();
-    }
 
     public ArrayList<Administrators> listaAdmin = new ArrayList<>();
     public ArrayList<Users> listaUser = new ArrayList<>();

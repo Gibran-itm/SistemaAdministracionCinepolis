@@ -1,10 +1,11 @@
 package  user.administrator;
 
+import java.nio.file.attribute.UserPrincipalLookupService;
 import java.time.LocalDate;
 import user.Users;
 import user.rol.Rol;
 
-public class Administrators extends Users{
+public class Administrators extends Users {
 
     public double sueldo;
     public String rfc;
@@ -33,6 +34,7 @@ public class Administrators extends Users{
 
 
     }
+
     public double getSueldo() {
         return sueldo;
     }

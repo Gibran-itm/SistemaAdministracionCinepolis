@@ -27,6 +27,7 @@ public class Users {
         return id;
     }
     public String getNombre() {
+
         return nombre;
     }
     public String getApellido() {
