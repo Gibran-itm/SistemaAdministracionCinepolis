@@ -1,8 +1,7 @@
 package user;
 
-import user.rol.Rol;
-
 import java.time.LocalDate;
+import user.rol.Rol;
 
 public class Users {
     public String id;
